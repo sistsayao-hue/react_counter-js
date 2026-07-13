@@ -10,9 +10,9 @@ const addOne = () => {
   });
 };
 
-  const add100 = () => {
-  setCount(count => {
-    const newCount = count + 100;
+const add100 = () => {
+  setCount(prevCount => {
+    const newCount = prevCount + 100;
 
     return newCount % 5 === 0 ? newCount + 100 : newCount;
   });

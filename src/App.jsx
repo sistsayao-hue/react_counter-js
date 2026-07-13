@@ -9,8 +9,14 @@ const addOne = () => {
     return newCount % 5 === 0 ? newCount + 100 : newCount;
   });
 };
-const add100 = () => {
-  addOne(); // Chama addOne ao invés de setCount diretamente
+
+  const add100 = () => {
+  setCount(count => {
+    const newCount = count + 100;
+
+    return newCount % 5 === 0 ? newCount + 100 : newCount;
+  });
+};
 };
 
 

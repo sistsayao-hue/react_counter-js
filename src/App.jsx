@@ -17,7 +17,7 @@ const addOne = () => {
     return newCount % 5 === 0 ? newCount + 100 : newCount;
   });
 };
-};
+
 
 
   // DON'T change the code below
